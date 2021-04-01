@@ -1,9 +1,3 @@
 function testArray(a, b) {
-    let firstArr = a.reduce((c, d) => c + d, 0);
-    let secondArr = b.reduce((c, d) => c + d, 0);
-    
-    return firstArr + secondArr;
+    return a.split('').concat(b.split('')).reverse().join('') + 'Иванов';
 }
-
-res = testArray([1, 2, 3], [2, 3, 6])
-console.log(res);
